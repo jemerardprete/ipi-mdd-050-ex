@@ -21,7 +21,7 @@ public abstract class Employe implements Serializable {
 	private static final long serialVersionUID = -633481376872387016L;
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 
 	private String nom;
