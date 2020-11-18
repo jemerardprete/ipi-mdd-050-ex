@@ -18,6 +18,7 @@ import java.util.stream.Collectors;
 public class Manager extends Employe {
 
 	@OneToMany(mappedBy = "manager")
+	// Quand transformation en json, s'il y a un attribut manager, il sera ignoré
 	@JsonIgnoreProperties("manager")
 	private Set<Technicien> equipe = new HashSet<>();
 
